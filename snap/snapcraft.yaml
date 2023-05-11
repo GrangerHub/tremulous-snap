@@ -1,0 +1,72 @@
+name: tremulous
+title: Tremulous
+version: 'v1.3.0-alpha.0.14'
+summary: Aliens vs Humans, FPS game with RTS elements
+description: |
+ Tremulous is a free, open source game that blends a team based FPS with elements
+ of an RTS.
+
+ Players can choose from 2 unique races, aliens and humans. Players on both teams
+ are able to build working structures in-game like an RTS.
+base: core20
+grade: stable
+confinement: strict
+compression: lzo
+
+architectures:
+  - build-on: amd64
+
+layout:
+  /usr/share/libdrm:
+    bind: $SNAP/usr/share/libdrm
+
+apps:
+  tremded:
+    extensions: [gnome-3-38]
+    command: tremded
+    plugs:
+      - network
+      - network-bind
+
+  tremulous:
+    extensions: [gnome-3-38]
+    command: tremulous
+    environment:
+      SDL_AUDIODRIVER: pulse
+    plugs:
+      - audio-playback
+      - joystick
+      - network
+      - network-bind
+      - opengl
+      - optical-drive
+      - wayland
+      - x11
+
+parts:
+  tremulous:
+    plugin: dump
+    source: https://github.com/GrangerHub/tremulous/releases/download/$SNAPCRAFT_PROJECT_VERSION/release-linux-x86_64.zip
+    build-packages:
+      - dpkg
+    stage-packages:
+      - libasound2
+      - libopenal1
+      - libbsd0
+      - libcurl4
+      - libgcc1
+      - libglu1-mesa
+      - libjpeg62
+      - libpulse0
+      - libsdl2-2.0-0
+      - libstdc++6
+      #- libtxc-dxtn-s2tc0
+      - libvorbisfile3
+      - libx11-6
+      - libxau6
+      - libxcb1
+      - libxdmcp6
+      - libxext6
+      - libxpm4
+      - libxxf86vm1
+      - zlib1g
