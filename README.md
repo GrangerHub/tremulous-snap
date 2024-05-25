@@ -1,10 +1,10 @@
 <h1 align="center">
-  <img src="https://avatars1.githubusercontent.com/u/29598503?v=3&s=256" alt="[Project]">
+  <img src="https://github.com/GrangerHub/tremulous/raw/master/misc/tremulous-banner.jpg" alt="GrangerHub Tremulous Client">
   <br />
-  [Project]
+  GrangerHub Tremulous Client
 </h1>
 
-<p align="center"><b>This is the snap for [Project]</b>, <i>“Single-line elevator pitch for your amazing snap”</i>. It works on Ubuntu, Fedora, Debian, and other major Linux
+<p align="center"><b>This is the snap for GrangerHub Tremulous Client</b>, which is an <i>“updated/improved Tremulous client”</i>. It works on Ubuntu, Fedora, Debian, and other major Linux
 distributions.</p>
 
 <!-- Uncomment and modify this when you are provided a build status badge
@@ -36,12 +36,12 @@ distributions.</p>
 
 ## Remaining tasks
 
-Snapcrafters ([join us](https://forum.snapcraft.io/t/snapcrafters-reboot/24625)) are working to land snap install documentation and the [snapcraft.yaml](https://github.com/snapcrafters/fork-and-rename-me/blob/master/snap/snapcraft.yaml) upstream so [Project] can authoritatively publish future releases.
+Snapcrafters ([join us](https://forum.snapcraft.io/t/snapcrafters-reboot/24625)) are working to land snap install documentation and the [snapcraft.yaml](https://github.com/snapcrafters/fork-and-rename-me/blob/master/snap/snapcraft.yaml) upstream so GrangerHub Tremulous Client can authoritatively publish future releases.
 
   - [x] Click the green "Use this template" button above to create a new repository based on this template
-  - [ ] Give the newly created repository a sensible name, like `godzilla` if you're snapping the Godzilla software (*Note: Do not use `snap` in this name.*)
-  - [ ] Update the description of the repository to `Unofficial snap for [Project]`
-  - [ ] Update logos and references to `[Project]` and `[my-snap-name]`
+  - [X] Give the newly created repository a sensible name, like `godzilla` if you're snapping the Godzilla software (*Note: Do not use `snap` in this name.*)
+  - [X] Update the description of the repository to `Unofficial snap for [Project]`
+  - [X] Update logos and references to `[Project]` and `[my-snap-name]`
   - [ ] Create a snap that runs in `devmode`
   - [ ] Convert the snap to `strict` confinement, or `classic` confinement if it qualifies
   - [ ] Register the snap in the store, **using the preferred upstream name**
