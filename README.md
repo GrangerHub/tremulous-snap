@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="https://github.com/GrangerHub/tremulous/raw/master/misc/tremulous-banner.jpg" alt="GrangerHub Tremulous Client">
+  <img src="https://avatars.githubusercontent.com/u/13594014?s=48&v=4" alt="GrangerHub Tremulous Client">
   <br />
   GrangerHub Tremulous Client
 </h1>
